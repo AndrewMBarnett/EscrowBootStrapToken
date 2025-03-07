@@ -1,4 +1,4 @@
-# **Bootstrap Token Escrow Script**  
+# **Bootstrap Token Escrow**  
 
 ## **Overview**  
 This script facilitates the escrow of a Bootstrap Token on macOS devices, ensuring proper security and management capabilities within a Jamf-managed environment. The script uses **SwiftDialog** to provide a user-friendly interface for selecting a Secure Token-enabled user and authenticating with their credentials.  
