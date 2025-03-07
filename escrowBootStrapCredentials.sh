@@ -194,10 +194,6 @@ selected_user=$(dialog --title "Escrow Bootstrap Token" --icon /System/Library/C
 handle_dialog_response "$?"
 
 password=$(echo $selected_user | awk -F " : " '{print $NF}')
-#echo "Password chosen is:" $password
-#echo "___________"
-#echo "Selected user info: $selected_user"
-#echo "___________"
 
 # Check if the user made a selection and display the result
 if [ "$selected_user" == "" ]; then
@@ -325,9 +321,5 @@ rm -f "$ESCROW_SCRIPT"
 # Pause for 3 seconds before recon
 log_message "Pausing for 3 seconds before recon..."
 sleep 3
-
-# Run Recon
-log_message "Running recon..."
-jamf recon
 
 exit 0
